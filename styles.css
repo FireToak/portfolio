@@ -1,0 +1,611 @@
+/* Styles globaux */
+* { 
+  box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur/hauteur */
+  text-decoration: none; /* Supprime le soulignement des liens */
+  font-family: "Poppins", sans-serif; /* Police de caractères Poppins */
+}
+
+hr {
+  border: none; /* Supprime la bordure par défaut */
+  height: 3.5px; /* Hauteur de la ligne horizontale */
+  width: 10%; /* Largeur de la ligne horizontale */
+  background-color: #ffffff; /* Couleur de la ligne horizontale */
+}
+
+.hr-black {
+  border: none; /* Supprime la bordure par défaut */
+  height: 3.5px; /* Hauteur de la ligne horizontale */
+  width: 10%; /* Largeur de la ligne horizontale */
+  background-color: #000000; /* Couleur de la ligne horizontale */
+}
+
+sup {
+  color: #6b6a43; /* Couleur du texte en exposant */
+  font-size: 1rem; /* Taille du texte en exposant */
+}
+
+footer {
+  max-width: 100%; /* Largeur maximale du footer */
+  min-height: 100%; /* Hauteur minimale du footer */
+}
+
+.strike {
+  text-decoration: line-through; /* Barre le texte */
+}
+
+body {
+  margin: 0; /* Supprime la marge par défaut du body */
+  padding: 0; /* Supprime le padding par défaut du body */
+  height: 100%; /* Hauteur du body */
+}
+
+nav {
+  background-color: #fff; /* Couleur de fond du menu */
+  padding: 0 20px; /* Espace intérieur horizontal du menu */
+  box-shadow: 0 10px 40px #525252; /* Ombre portée du menu */
+  display: flex; /* Affichage en flex pour aligner les éléments */
+  position: fixed; /* Positionnement fixe pour le menu */
+  width: 100%; /* Largeur du menu */
+  top: 0; /* Positionnement en haut de la page */
+  z-index: 1000; /* Assure que le menu est au-dessus des autres éléments */
+}
+
+.nav-title {
+  font-size: 1.5rem; /* Taille de la police du titre */
+  color: #333; /* Couleur du texte du titre */
+  margin-right: auto; /* Pousse les liens vers la droite */
+  font-weight: bold; /* Met le titre en gras */
+  display: flex; /* Affichage en flex pour le titre */
+  justify-content: flex-start; /* Aligne le titre à gauche */
+}
+
+.nav-item {
+  display: flex; /* Affichage en flex pour les éléments du menu */
+  justify-content: flex-end; /* Aligne les liens à droite */
+  color: #83818c; /* Couleur du texte des liens */
+  padding: 20px; /* Espace intérieur des liens */
+  margin: 0 6px; /* Espace entre les liens */
+  right: 1rem; /* Décalage à droite (inutile ici sans position relative/absolute) */
+}
+
+.nav-item:hover {
+  color: #333; /* Couleur du texte au survol */
+}
+
+.home {
+  display: flex; /* Affichage en flex pour la section home */
+  align-items: center; /* Centre le contenu verticalement */
+  justify-content: center; /* Centre le contenu horizontalement */
+  background-image: url(img/img_home_portfolio.png); /* Image de fond de la section home */
+  background-size: cover; /* Couvre toute la section avec l'image */
+  background-position: center; /* Centre l'image de fond */
+  background-repeat: no-repeat; /* Ne répète pas l'image de fond */
+  height: 100vh; /* Hauteur de la section home */
+}
+
+.home-rectangle {
+  background-color: #1A2C52; /* Couleur de fond du rectangle */
+  padding: 20px; /* Espace intérieur du rectangle */
+  border-radius: 10px; /* Coins arrondis du rectangle */
+  text-align: center; /* Centre le texte à l'intérieur du rectangle */
+  width: 50%; /* Largeur du rectangle */
+  max-width: 800px; /* Largeur maximale du rectangle */
+}
+
+.home-rectangle h1 {
+  color: #fff; /* Couleur du texte du titre */
+  font-size: 2.5rem; /* Taille de la police du titre */
+  margin-bottom: 10px; /* Espace en bas du titre */
+}
+
+.home-rectangle p {
+  color: #fff; /* Couleur du texte de la description */
+  font-size: 1.1rem; /* Taille de la police de la description */
+  margin-bottom: 20px; /* Espace en bas de la description */
+}
+
+.home-rectangle button {
+  background-color: #59FF65; /* Couleur de fond des boutons */
+  color: #000000; /* Couleur du texte des boutons */
+  border: none; /* Supprime la bordure des boutons */
+  padding: 10px 20px; /* Espace intérieur des boutons */
+  border-radius: 5px; /* Coins arrondis des boutons */
+  cursor: pointer; /* Curseur en main pour indiquer que c'est cliquable */
+  margin: 5px; /* Espace entre les boutons */
+  font-size: 1rem; /* Taille de la police des boutons */
+}
+
+.home a {
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: inherit; /* Prend la couleur du texte parent */
+}
+
+.about {
+  background-color: #ffffff; /* Couleur de fond de la section about */
+  padding: 50px 20px; /* Espace intérieur de la section about */
+  display: flex; /* Affichage en flex pour la section about */
+  flex-direction: column; /* Colonne pour aligner les éléments verticalement */
+}
+
+.about h1 {
+  font-size: 2rem; /* Taille de la police du titre de la section about */
+  color: #333; /* Couleur du texte du titre */
+  margin-bottom: 10px; /* Espace en bas du titre */
+  text-align: center; /* Centre le titre horizontalement */
+}
+
+.about-text {
+  max-width: 800px; /* Largeur maximale de la description */
+  padding: 20px; /* Espace intérieur de la description */
+  font-size: 1.1rem; /* Taille de la police de la description */
+  color: #666; /* Couleur du texte de la description */
+  line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+  margin: 0 auto; /* Centre la description horizontalement */
+}
+
+.skills {
+  background-color: #323231; /* Couleur de fond de la section skills */
+  color: #ffffff; /* Couleur du texte de la section skills */
+  padding: 50px 20px; /* Espace intérieur de la section skills */
+}
+
+.skills h1 {
+  font-size: 2rem; /* Taille de la police du titre de la section skills */
+  margin-bottom: 10px; /* Espace en bas du titre */
+  text-align: center; /* Centre le titre horizontalement */
+}
+
+.skills-rectangle {
+  background-color: #ffffff; /* Couleur de fond du rectangle */
+  color: #000000; /* Couleur du texte du rectangle */
+  padding: 20px; /* Espace intérieur du rectangle */
+  border-radius: 10px; /* Coins arrondis du rectangle */
+  max-width: 330px; /* Largeur maximale du rectangle */
+  min-width: 330px; /* Largeur minimale du rectangle */
+  margin: 10px 10px; /* Espace autour du rectangle */
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
+}
+
+.skills-rectangle:hover {
+  transition: transform 0.3s ease; /* Animation douce pour l'agrandissement */
+  box-shadow: 10px 10px 10px #7fa9ff; /* Ombre portée au survol */
+}
+
+.skills-flex {
+  display: flex; /* Affichage en flex */
+  flex-direction: row; /* Direction des éléments */
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  width: 60%; /* Largeur de la section skills-flex */
+  margin: 10px auto; /* Centre la section horizontalement */
+}
+
+.skills-rectangle p {
+  text-align: center; /* Centre le texte de la description */
+  font-size: 1.5rem; /* Taille de la police de la description */
+  margin-top: 0; /* Pas d'espace en haut de la description */
+}
+
+.skills-rectangle li {
+  font-size: 1.1rem; /* Taille de la police des éléments de la liste */
+  margin-bottom: 10px; /* Espace en bas de chaque élément de la liste */
+}
+
+.skills-rectangle hr {
+  border: none; /* Supprime la bordure par défaut */
+  background-color: #000000; /* Couleur de la ligne horizontale */
+  height: 3.5px; /* Hauteur de la ligne horizontale */
+  width: 10%; /* Largeur de la ligne horizontale */
+}
+
+.education {
+  color: #000000; /* Couleur du texte de la section education */
+  padding: 50px 20px; /* Espace intérieur de la section education */
+}
+
+.education h1 {
+  font-size: 2rem; /* Taille de la police du titre de la section education */
+  margin-bottom: 10px; /* Espace en bas du titre */
+  text-align: center; /* Centre le titre horizontalement */
+}
+
+.education-rectangle h2 {
+  color: #ffffff; /* Couleur du texte du titre */
+  font-size: 1.6rem; /* Taille de la police du titre */
+  margin-bottom: 0; /* Pas d'espace en bas du titre */
+  text-align: center; /* Centre le titre horizontalement */
+}
+
+.education-rectangle p {
+  color: #cccccc; /* Couleur du texte de la description */
+  text-align: center; /* Centre le texte de la description */
+  font-size: 1rem; /* Taille de la police de la description */
+  margin-top: 0; /* Pas d'espace en haut de la description */
+}
+
+.education-rectangle p.data {
+  color: #ffffff; /* Couleur du texte de la date */
+  font-size: 1rem; /* Taille de la police de la date */
+  background-color: #000000; /* Couleur de fond de la date */
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
+  border-radius: 10px; /* Coins arrondis de la date */
+  width: 40%; /* Largeur de la date */
+  margin: 10px auto; /* Centre horizontalement */
+  padding: 5px; /* Espace intérieur */
+}
+
+.education-rectangle p.description {
+  color: #ffffff; /* Couleur du texte de la description */
+  font-size: 1rem; /* Taille de la police de la description */
+  text-align: start; /* Aligne le texte à gauche */
+  margin: 40px auto; /* Espace en haut et centré horizontalement */
+}
+
+.education-rectangle a.btn {
+  margin-top: auto; /* Pousse les boutons vers le bas */
+  background-color: #59FF65; /* Couleur de fond des boutons */
+  color: #000000; /* Couleur du texte des boutons */
+  padding: 10px 20px; /* Espace intérieur des boutons */
+  border-radius: 5px; /* Coins arrondis des boutons */
+  cursor: pointer; /* Curseur en main */
+  display: flex;
+  justify-content: center; /* Centre le texte des boutons */
+  align-items: center; /* Centre verticalement */
+  width: 100%; /* Largeur des boutons */
+}
+
+.education-rectangle {
+  background-color: #3f3f3f; /* Couleur de fond du rectangle */
+  padding: 20px; /* Espace intérieur du rectangle */
+  border-radius: 10px; /* Coins arrondis du rectangle */
+  max-width: 330px; /* Largeur maximale du rectangle */
+  min-width: 330px; /* Largeur minimale du rectangle */
+  margin: 10px 10px; /* Espace autour du rectangle */
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
+  display: flex; /* Affichage en flex */
+  flex-direction: column; /* Colonne pour aligner les éléments verticalement */
+}
+
+.education-rectangle:hover {
+  transition: transform 0.3s ease; /* Animation douce pour l'agrandissement */
+  box-shadow: 10px 10px 10px #5990ff; /* Ombre portée au survol */
+}
+
+.education-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  width: 60%;
+  margin: 10px auto; /* Centre la section horizontalement */
+}
+
+.education-rectangle li {
+  font-size: 1.1rem; /* Taille de la police des éléments de la liste */
+  color: #ffffff; /* Couleur du texte des éléments de la liste */
+  margin-bottom: 10px; /* Espace en bas de chaque élément de la liste */
+}
+
+.certification {
+  background-color: #323231; /* Couleur de fond de la section certification */
+  color: #ffffff; /* Couleur du texte dans la section certification */
+  padding: 50px 20px;
+}
+
+.certification h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.certification-rectangle {
+  background-color: #ffffff; /* Couleur de fond du rectangle */
+  color: #000000; /* Couleur du texte du rectangle */
+  padding: 20px; /* Espace intérieur du rectangle */
+  border-radius: 10px; /* Coins arrondis du rectangle */
+  max-width: 330px; /* Largeur maximale du rectangle */
+  min-width: 330px; /* Largeur minimale du rectangle */
+  margin: 10px 10px; /* Espace autour du rectangle */
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
+  display: flex; /* Affichage en flex */
+  flex-direction: column; /* Colonne pour aligner les éléments verticalement */
+}
+
+.certification-rectangle h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.certification-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  width: 60%;
+  margin: 10px auto; /* Centre la section horizontalement */
+}
+
+.certification-rectangle p.data {
+  background-color: #000000;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px auto; /* Centre horizontalement */
+}
+
+.certification-rectangle a.btn {
+  margin-top: auto; /* Pousse les boutons vers le bas */
+  background-color: #59FF65; /* Couleur de fond des boutons */
+  color: #000000; /* Couleur du texte des boutons */
+  padding: 10px 20px; /* Espace intérieur des boutons */
+  border-radius: 5px; /* Coins arrondis des boutons */
+  cursor: pointer; /* Curseur en main */
+  display: flex;
+  justify-content: center; /* Centre le texte des boutons */
+  align-items: center; /* Centre verticalement */
+  width: 100%; /* Largeur des boutons */
+}
+
+.certification-rectangle:hover {
+  transition: box-shadow 0.3s ease; /* Animation douce pour l'ombre portée */
+  box-shadow: 10px 10px 10px #7fa9ff; /* Ombre portée au survol */
+}
+
+.professional-experience {
+  color: #000000;
+  padding: 50px 20px;
+}
+
+.professional-experience h1 {
+  text-align: center; /* Centre le titre horizontalement */
+}
+
+.professional-experience-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%; /* Largeur de la section */
+  margin: 10px auto; /* Centre la section horizontalement */
+}
+
+.professional-experience-rectangle {
+  background-color: #3f3f3f;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px; /* Espace intérieur du rectangle */
+  max-width: 360px; /* Largeur maximale du rectangle */
+  min-width: 330px; /* Largeur minimale du rectangle */
+  margin: 10px 10px; /* Espace autour du rectangle */
+  box-shadow: 0 10px 30px #00000034; /* Ombre portée du rectangle */
+  display: flex; /* Affichage en flex */
+  flex-direction: column; /* Colonne pour aligner les éléments verticalement */
+}
+
+.professional-experience-rectangle h2 {
+  color: #ffffff; /* Couleur du texte du titre */
+  text-align: center; /* Centre le titre horizontalement */
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.professional-experience-rectangle p {
+  color: #cccccc; /* Couleur du texte de la description */
+  font-size: 1rem; /* Taille de la police de la description */
+  margin-top: 0; /* Pas d'espace en haut de la description */
+  text-align: center; /* Centre le texte de la description */
+}
+
+.professional-experience-rectangle p.data {
+  color: #ffffff; /* Couleur du texte de la date */
+  font-size: 1rem; /* Taille de la police de la date */
+  margin-top: 0; /* Pas d'espace en haut de la description */
+  background-color: #000000; /* Couleur de fond */
+  border-radius: 10px; /* Coins arrondis */
+  max-width: 70%; /* Largeur maximale */
+  padding: 5px; /* Espace intérieur */
+  margin: 10px auto; /* Centre horizontalement */
+}
+
+.professional-experience-rectangle ul {
+  list-style-type: none; /* Supprime les puces */
+  padding: 0;
+  margin-left: 1em;
+}
+
+.professional-experience-rectangle li {
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+.professional-experience-rectangle li.update {
+  background-image: url(img/icones/windows-update-100.png);
+}
+
+.professional-experience-rectangle li.windows-server {
+  background-image: url(img/icones/serveur-100.png);
+}
+
+.professional-experience-rectangle li.switch {
+  background-image: url(img/icones/switch-100.png);
+}
+
+.professional-experience-rectangle li.wifi {
+  background-image: url(img/icones/wifi-100.png);
+}
+
+.professional-experience-rectangle li.poste-de-travail {
+  background-image: url(img/icones/poste-de-travail-100.png);
+}
+
+.professional-experience-rectangle li.procedure {
+  background-image: url(img/icones/document-100.png);
+}
+
+.professional-experience-rectangle li.reseau {
+  background-image: url(img/icones/reseau-100.png);
+}
+
+.professional-experience-rectangle li.depannage {
+  background-image: url(img/icones/depannage-100.png);
+}
+
+.professional-experience-rectangle:hover {
+  transition: box-shadow 0.3s ease; /* Animation douce pour l'ombre portée */
+  box-shadow: 10px 10px 10px #7fa9ff; /* Ombre portée au survol */
+}
+
+.project {
+  background-color: #323231; /* Couleur de fond de la section project */
+  color: #ffffff;
+  padding: 50px 20px;
+}
+
+.project h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%; /* Largeur de la section */
+  margin: 10px auto; /* Centre la section horizontalement */
+}
+
+.project-rectangle {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 330px;
+  min-width: 330px;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-rectangle h2 {
+  margin: 10px auto;
+}
+
+.project-rectangle a.btn {
+  margin-top: auto; /* Pousse les boutons vers le bas */
+  background-color: #59FF65; /* Couleur de fond des boutons */
+  color: #000000; /* Couleur du texte des boutons */
+  padding: 10px 20px; /* Espace intérieur des boutons */
+  border-radius: 5px; /* Coins arrondis des boutons */
+  cursor: pointer; /* Curseur en main */
+  display: flex;
+  justify-content: center; /* Centre le texte des boutons */
+}
+
+.project-rectangle img {
+  width: 100%; /* Prend toute la largeur du rectangle */
+  border-radius: 10px; /* Coins arrondis de l'image */
+  margin: 0;
+  padding: 0;
+}
+
+.project-rectangle:hover {
+  transition: box-shadow 0.3s ease; /* Animation douce pour l'ombre portée */
+  box-shadow: 10px 10px 10px #5990ff; /* Ombre portée au survol */
+}
+
+footer {
+  background-color: #d8d8d8; /* Couleur de fond du footer */
+  color: #000000; /* Couleur du texte du footer */
+  padding: 20px 0; /* Espace intérieur du footer */
+  font-size: 1.2rem; /* Taille de la police du footer */
+}
+
+.hr-footer-top {
+  border: none; /* Supprime la bordure par défaut */
+  height: 3.5px; /* Hauteur de la ligne horizontale */
+  width: 100%; /* Largeur de la ligne */
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Couleur de la ligne horizontale */
+  box-sizing: border-box; /* Inclut la marge dans la largeur totale */
+}
+
+.footer-top {
+  display: flex; /* Affichage en flex */
+  flex-direction: row; /* Direction des éléments */
+  justify-content: space-between; /* Espace entre les éléments */
+  align-items: center; /* Centre verticalement */
+  padding: 20px 50px 0 50px; /* Espace intérieur */
+  margin: 0;
+  font-size: 1.3rem;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+.footer-top img {
+  width: 45px; /* Largeur de l'image */
+}
+
+footer hr.hr-footer {
+  display: flex; /* Affichage en flex */
+  flex-direction: row; /* Direction des éléments */
+  justify-content: center; /* Centre horizontalement */
+  width: calc(100% - 100px); /* Largeur ajustée */
+  margin: 0 50px 0 50px;
+  background-color: #000000; /* Couleur de la ligne horizontale */
+  box-sizing: border-box; /* Inclut la marge dans la largeur totale */
+}
+
+.footer-bottom {
+  display: flex; /* Affichage en flex */
+  flex-direction: column; /* Colonne pour aligner les éléments verticalement */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  padding: 20px 50px; /* Espace intérieur */
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Colonne pour les petits écrans */
+    align-items: center; /* Centre les éléments du menu */
+  }
+  
+  .nav-item {
+    width: 100%; /* Prend toute la largeur pour les petits écrans */
+    justify-content: center; /* Centre le texte des liens */
+  }
+  
+  .nav-title {
+    margin-bottom: 10px; /* Espace en bas du titre */
+    font-size: 1.2rem; /* Réduit la taille du titre */
+  }
+}
+
+@media (max-width: 920px) {
+  .home-rectangle {
+    width: 90%; /* Prend 90% de la largeur */
+    padding: 15px; /* Réduit l'espace intérieur */
+  }
+  
+  .home-rectangle h1 {
+    font-size: 2rem; /* Réduit la taille du titre */
+  }
+
+  .nav-item {
+    display: none; /* Cache les éléments du menu */
+  }
+
+  .home {
+    background-image: url(img/img_home_portfolio_small.png); /* Image de fond différente */
+    background-size: cover; /* Couvre toute la section */
+    background-position: center; /* Centre l'image de fond */
+    background-repeat: no-repeat; /* Ne répète pas l'image */
+  }
+}

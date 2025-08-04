@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - MEDO/Louis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-20Y923RPCY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-20Y923RPCY');
+</script>
+</head>
+<body>
+    <!-- nav-bar -->
+    <header>
+        <nav>
+            <h1 class="nav-title">Portfolio<sup>Beta</sup>&nbsp;- Admin. Systèmes</h1>
+            <a href="#home" class="nav-item is-active">Présentation</a>
+            <a href="#skills" class="nav-item">Compétences</a>
+            <a href="#projects" class="nav-item">Mes projets</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home"> <!-- Section principale du portfolio -->
+        <div class="home-rectangle"> <!-- Rectangle contenant le titre, la description et les boutons -->
+            <h1>Louis MEDO</h1> <!-- Titre principal du portfolio -->
+            <hr> <!-- Ligne horizontale pour séparer le titre de la description -->
+            <p>Étudiant en Administration Systèmes et Réseaux</p> <!-- Description du portfolio -->
+            <button href="#skills"><a href="#skills">Compétences</a></button> <button href="#projects"><a href="#projects">Projets</a></button> <!-- Boutons pour naviguer vers les sections compétences et projets -->
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h1>À propos</h1>
+        <hr> <!-- Ligne horizontale blanche pour séparer le titre de la description -->
+        <p class="about-text">
+            Je m'appelle Louis, passionné et autodidacte dans le domaine de l'administration
+            système. Actuellement, je prépare un BTS SIO (Services Informatiques au Organisations)
+            au lycée Paul Louis Courrier.
+        </p>
+        <p class="about-text">
+            Je consacre la majeure partie de mon temps libre à me tenir informé des nouvelles
+            technologies et à pratiquer pour développer de nouvelles compétences. J'ai également
+            transformé un ordinateur de bureau Z440 en serveur chez moi, sous VMware ESXi, où je
+            gère différentes machines virtuelles sous Linux pour des services tels qu'OpenVPN,
+            Docker, Nextcloud, Traefik et de l'hébergement web.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h1>Compétences</h1>
+        <hr> <!-- Ligne horizontale noire pour séparer le titre de la description -->
+        <div class="skills-flex">
+            <div class="skills-rectangle">
+                <p>Systèmes d'exploitation</p>
+                <hr class="hr-competences"> <!-- Ligne horizontale pour séparer le titre de la liste -->
+                    <ul>
+                        <li>Linux (Debian, Ubuntu Server)</li>
+                        <li>Windows Server</li>
+                    </ul>
+            </div>
+
+            <div class="skills-rectangle">
+                <p>Virtualisation</p>
+                <hr class="hr-competences"> <!-- Ligne horizontale pour séparer le titre de la liste -->
+                <ul>
+                    <li>VMware ESXi</li>
+                    <li>Proxmox</li>
+                    <li>Hyper-V</li>
+                </ul>
+            </div>
+
+            <div class="skills-rectangle">
+                <p>Conteneurisation</p>
+                <hr class="hr-competences"> <!-- Ligne horizontale pour séparer le titre de la liste -->
+                <ul>
+                    <li>Docker</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h1 class="">Formations</h1>
+
+        <hr class="hr-black"> <!-- Ligne horizontale noire pour séparer le titre de la description -->
+
+        <div class="education-flex">
+            <div class="education-rectangle">
+                <h2 class="">BTS SIO</h2>
+                <p>Lycée Paul Louis Courier / Tours</p>
+                <p class="data">2025 - 2027</p>
+                <hr class="hr-competences"> <!-- Ligne horizontale pour séparer le titre de la liste -->
+                <p class="description">BTS Services Informatiques aux Organisations</p>
+                <!-- <a class="btn strike" href="#">Projet d'étude</a> -->
+            </div>
+            <div class="education-rectangle">
+                <h2>BAC PRO SN RISC</h2>
+                <p>Lycée Henri Becquerel / Tours</p>
+                <p class="data">2023 - 2025</p>
+                <hr class="hr-competences"> <!-- Ligne horizontale pour séparer le titre de la liste -->
+                <p class="description">BAC PRO Systèmes Numériques, option Réseaux Informatiques et Systèmes Communicants</p>
+                    <a class="btn" href="https://kdrive.infomaniak.com/app/share/831857/2ceb08ca-fb38-4769-9d09-2fdfb3462db7">Projet d'étude</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification section -->
+     <section class="certification" id="certification">
+        <h1>Certifications</h1>
+        <hr>
+        <div class="certification-flex">
+            <div class="certification-rectangle">
+                <h2>SecNum académie</h2>
+                <p class="data">Juillet 2025</p>
+                <hr class="hr-black"> <!-- Ligne horizontale noire pour séparer le titre de la description -->
+                <p>ANSSI - Agence nationale de la sécurité des systèmes d'information</p>
+                <a href="https://kdrive.infomaniak.com/app/share/831857/868a66cc-782d-46db-a6ac-2a75d056b4fb/preview/pdf/16957" target="_blank" class="btn">Voir le certificat</a>
+            </div>
+            <div class="certification-rectangle">
+                <h2>Pix</h2>
+                <p class="data">Mai 2025</p>
+                <hr class="hr-black">
+                <p>Lycée Professionnel Henri Becquerel</p>
+                <a href="https://kdrive.infomaniak.com/app/share/831857/2cdbb382-6975-4b1c-9911-ceb1c91c06f4" target="_blank" class="btn">Voir le certificat</a>
+            </div>
+        </div>
+     </section>
+
+     <!--- Professional Experience -->
+     <section class="professional-experience">
+        <h1>Experiences Professionnelles</h1>
+        <hr class="hr-black">
+        <div class="professional-experience-flex">
+            <div class="professional-experience-rectangle">
+                <h2>Administration système</h2>
+                <p>Hutchinson / Joué-lès-Tours</p>
+                <p class="data">Stage - décembre 2024</p>
+                <hr>
+                <ul>
+                    <li class="update">Migration de postes de travail Windows 10 vers Windows 11.</li>
+                    <li class="windows-server">Installation et configuration de deux serveurs sous Windows Server 2025.</li>
+                    <li class="switch">Mise à jour du firmware d'un switch Cisco.</li>
+                    <li class="wifi">Configuration d'un point d'accès sans fil Cisco.</li>
+                    <li class="poste-de-travail">Préparation de postes de travail.</li>
+                </ul>
+            </div>
+            <div class="professional-experience-rectangle">
+                <h2>Administration système</h2>
+                <p>Hutchinson / Joué-lès-Tours</p>
+                <p class="data">Stage - juin 2024</p>
+                <hr>
+                <ul>
+                    <li class="update">Migration de postes de travail de Windows 10 vers Windows 11.</li>
+                    <li class="procedure">Rédaction de procédures.</li>
+                    <li class="poste-de-travail">Préparation de postes de travail, incluant l'installation de logiciels professionnels, 
+                        la configuration des outils Microsoft, et le transfert des données des clients.</li>
+                </ul>
+            </div>
+            <div class="professional-experience-rectangle">
+                <h2>Inforégance</h2>
+                <p>APB MULTIMEDIA / Tours</p>
+                <p class="data">Stage - février 2024</p>
+                <hr>
+                <ul>
+                    <li class="update">Mise en place de Windows Server 2022 avec les services : Hyper-V, DNS, DHCP, Active Directory.</li>
+                    <li class="switch">Configuration de switchs et de routeurs de marque Zyxel.</li>
+                    <li class="reseau">Refonte d’un réseau d’entreprise (routeur, switchs et serveur).</li>
+                    <li class="depannage">Dépannage informatique.</li>
+                    <li class="poste-de-travail">Préparation de postes de travail.</li>
+                </ul>
+            </div>
+        </div>
+     </section>
+
+     <!-- Projects Section -->
+      <section class="project" id="projects">
+        <h1>Projets</h1>
+        <hr>
+        <div class="project-flex">
+            <div class="project-rectangle">
+                <img src="img/illustrations/projet-traefik.png" alt="Capture d'écran du dashboard Traefik">
+                <h2>Traefik reverse proxy</h2>
+                <hr class="hr-black">
+                <p>Mise en place d'un reverse proxy avec Traefik pour gérer les requêtes HTTPS sur mon homelab.</p>
+                <a href="https://kdrive.infomaniak.com/app/share/831857/35e30e55-8e6a-4590-a075-c17dbcc8939a" class="btn" target="_blank">Voir le projet</a>
+            </div>
+            <div class="project-rectangle">
+                <img src="img/illustrations/projet-wiki-loutik.png" alt="Capture d'écran du site wiki Loutik">
+                <h2>WIKI Loutik</h2>
+                <hr class="hr-black">
+                <p>Mise en place d'un wiki avec google sites pour partager mes procédures.</p>
+                <a href="https://wiki.loutik.fr" class="btn" target="_blank">voir le projet</a>
+            </div>
+        </div>
+      </section>
+
+    <!-- Footer Section -->
+     <hr class="hr-footer-top">
+     <footer>
+        <div class="footer-flex">
+            <div class="footer-top">
+                <H4>MEDO/Louis - Portfolio</H4>
+                <p>
+                    <a href="https://www.linkedin.com/in/louismedo/" target="_blank"><img src="img/icones/linkedin-100.png" alt="logo LinkedIn"></a>
+                    <a href="https://github.com/firetoak" target="_blank"><img src="img/icones/github-100.png" alt="logo GitHub"></a>
+                    <a href="https://www.youtube.com/@FireToak" target="_blank"><img src="img/icones/youtube-100.png" alt="logo YouTube"></a>
+                    <a href="https://www.tiktok.com/@firetoak" target="_blank"><img src="img/icones/tiktok-100.png" alt="logo TikTok"></a>
+                    <a href="mailto:louismedo.pro@gmail.com" target="_blank"><img src="img/icones/mail-100.png" alt="logo Email"></a>
+                </p>
+            </div>
+            <hr class="hr-footer">
+            <div class="footer-bottom">
+                <p>© 2025 Louis MEDO - Tous droits réservés</p>
+                <p>Version : 1.0.0</p>
+            </div>
+        </div>
+     </footer>
+    </body>
+</html>
